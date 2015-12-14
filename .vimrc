@@ -118,6 +118,9 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
 " Open NerdTree
 noremap <leader>nt :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+"au VimEnter *  NERDTree
+
 
 " Automatic commands
 if has("autocmd")
@@ -129,4 +132,11 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
-execute pathogen#infect() 
+call plug#begin()
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'chase/vim-ansible-yaml'
+Plug 'jeetsukumaran/vim-buffergator'
+call plug#end()
+
+" Helptags
+
