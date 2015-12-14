@@ -116,6 +116,9 @@ set scrolloff=3
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
+" Open NerdTree
+noremap <leader>nt :NERDTreeToggle<CR>
+
 " Automatic commands
 if has("autocmd")
 	" Enable file type detection
