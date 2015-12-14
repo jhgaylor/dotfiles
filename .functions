@@ -234,3 +234,7 @@ elif [[ $OSTYPE == "linux-gnu" ]]; then
 	complete -F _completemarks jump unmark
 fi
 # end marks configuration
+
+function installBrew {
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+}
