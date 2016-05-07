@@ -175,8 +175,9 @@ function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
-function fswclone { 
-	git clone http://gitlab.fsw.com/$1/$2.git
+function wtclone { 
+	git clone git@github.com:welltok/$1.git $1
+	cd $1
 }
 
 function fswssh {
