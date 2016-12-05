@@ -1,4 +1,6 @@
-alias bechef="eval $(chef shell-init bash)"
+alias aansible="ansible --private-key /Users/jake/.ssh/jake-laptop-aws.pem -u ubuntu "
+alias aap="ansible-playbook --private-key /Users/jake/.ssh/jake-laptop-aws.pem -u ubuntu "
+alias aansible-playbook=aap
 alias awslogin="source ~/.aws/setenv.sh"
 alias pwtestenv="source ~/dev/platform/system_test/setenv.sh"
 # Easier navigation: .., ..., ...., ....., ~ and -
